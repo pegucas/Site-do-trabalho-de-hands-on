@@ -35,7 +35,7 @@ body {
 }
 
 .btn-back {
-    color: #00d2ff;
+    color: #ffffff;
     font-size: 1.5rem;
     text-decoration: none;
     transition: opacity 0.2s;
@@ -43,7 +43,7 @@ body {
 
 .btn-back:hover {
     opacity: 0.8;
-    color: #00d2ff;
+    color: #ffffff;
 }
 
 .header-title {
@@ -59,7 +59,7 @@ body {
 }
 
 .header-title i {
-    color: #a855f7;
+    color: #ffffff;
 }
 
 /* =========================================
