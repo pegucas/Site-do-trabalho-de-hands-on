@@ -1,8 +1,8 @@
 /* =========================================
-       CONFIGURAÇÕES GERAIS E FUNDO
-       ========================================= */
+   CONFIGURAÇÕES GERAIS E FUNDO (PADRONIZADO)
+   ========================================= */
 body {
-    background: radial-gradient(circle at top, #111836 0%, #050814 100%);
+    background: #405b9a;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     margin: 0;
@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Trava a rolagem na página inteira, rola só o chat */
 }
 
 .app-container {
@@ -21,23 +20,25 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
+    background: radial-gradient(circle at top left, #5cbdb9 0%, #6f7fb7 70%);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 /* =========================================
-       CABEÇALHO COM BOTÃO VOLTAR
-       ========================================= */
+   CABEÇALHO COM BOTÃO VOLTAR
+   ========================================= */
 .top-header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: rgba(17, 24, 54, 0.95);
+    background: rgba(92, 189, 185, 0.9);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 10;
 }
 
 .btn-back {
-    color: #00d2ff;
+    color: #164752;
     font-size: 1.5rem;
     text-decoration: none;
     transition: opacity 0.2s;
@@ -46,7 +47,7 @@ body {
 
 .btn-back:hover {
     opacity: 0.8;
-    color: #00d2ff;
+    color: #164752;
 }
 
 .header-info {
@@ -57,7 +58,7 @@ body {
 .header-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #164752;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -65,7 +66,7 @@ body {
 
 .header-subtitle {
     font-size: 0.8rem;
-    color: #00d2ff;
+    color: rgba(255, 255, 255, 0.914);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -80,8 +81,8 @@ body {
 }
 
 /* =========================================
-       ÁREA DE MENSAGENS (CHAT)
-       ========================================= */
+   ÁREA DE MENSAGENS (CHAT)
+   ========================================= */
 .chat-container {
     flex: 1;
     padding: 20px;
@@ -89,7 +90,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* Esconde scrollbar */
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -98,19 +98,17 @@ body {
     display: none;
 }
 
-/* Informação do Botão Central "Chat Bot (Luna)" da imagem */
 .chat-bot-badge {
     align-self: center;
-    background: rgba(23, 19, 58, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(23, 19, 58, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
-    color: #a0abc0;
+    color: #e0e7ff;
     margin-bottom: 10px;
 }
 
-/* Balão do Bot (Esquerda) */
 .message-bot {
     align-self: flex-start;
     display: flex;
@@ -121,52 +119,49 @@ body {
 .bot-avatar {
     width: 35px;
     height: 35px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    color: #00d2ff;
-    border: 1px solid rgba(0, 210, 255, 0.3);
+    color: rgba(255, 255, 255, 0.914);
+    border: 1px solid rgba(0, 210, 255, 0.4);
 }
 
 .bubble-bot {
-    background: rgba(26, 34, 61, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(23, 19, 58, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px 16px;
     border-radius: 0 16px 16px 16px;
-    /* Canto superior esquerdo reto */
     font-size: 0.95rem;
     color: #e2e8f0;
     line-height: 1.4;
 }
 
-/* Balão do Usuário (Direita) */
 .message-user {
     align-self: flex-end;
     max-width: 80%;
 }
 
 .bubble-user {
-    background: linear-gradient(135deg, #0099ff 0%, #a855f7 100%);
+    background: linear-gradient(135deg, #0099ff 0%, rgb(255, 166, 0, 0.914) 100%);
     padding: 12px 16px;
     border-radius: 16px 0 16px 16px;
-    /* Canto superior direito reto */
     font-size: 0.95rem;
     color: #ffffff;
     line-height: 1.4;
-    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.2);
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
 }
 
 /* =========================================
-       ÁREA DE DIGITAÇÃO (INPUT)
-       ========================================= */
+   ÁREA DE DIGITAÇÃO (INPUT)
+   ========================================= */
 .chat-input-area {
     padding: 15px 20px;
-    background: rgba(10, 11, 28, 0.95);
+    background: rgba(92, 189, 185, 0.95);
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     gap: 10px;
     align-items: center;
@@ -174,8 +169,8 @@ body {
 
 .chat-input-box {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 24px;
     padding: 10px 15px;
     display: flex;
@@ -186,18 +181,18 @@ body {
 .chat-input-box input {
     background: transparent;
     border: none;
-    color: white;
+    color: #164752;
     width: 100%;
     outline: none;
     font-size: 0.95rem;
 }
 
 .chat-input-box input::placeholder {
-    color: #6c7a9c;
+    color: #4a6a75;
 }
 
 .chat-input-box i {
-    color: #6c7a9c;
+    color: #164752;
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -205,7 +200,7 @@ body {
 .btn-send {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #0099ff 0%, #a855f7 100%);
+    background: linear-gradient(135deg, #0099ff 0%, rgb(255, 166, 0, 0.914) 100%);
     border: none;
     border-radius: 50%;
     display: flex;
